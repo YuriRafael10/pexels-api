@@ -1,0 +1,27 @@
+footer {
+  color: whitesmoke;
+  background-color: rgb(19, 18, 22);
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.row .column {
+  flex: 33.3%;
+  width: auto;
+  overflow: hidden;
+  padding: 0 4px;
+  height: 100%;
+}
+.row .column img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 680px) {
+  .row .column {
+    flex: 100%;
+  }
+}
