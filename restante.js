@@ -1,4 +1,5 @@
 const apiKey = "cUzMHx9MQddox97hvea9dXiPj8JkZzRbT9pUae48QCUa2cRc3UF4tG3q"
+const apiUrl = "https://api.pexels.com/v1/"
 
 fetch(apiUrl, {
   headers: {
