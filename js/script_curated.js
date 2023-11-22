@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         img.photographer = data.photos[i].photographer;
         const randomNumber = Math.floor(Math.random() * 6) + 1;
         const photoContainer = addPhoto(img, randomNumber);
-        document.querySelector("main").appendChild(photoContainer);
+        document.getElementById("galleryContainer").appendChild(photoContainer);
       }
     })
     .catch((error) => {
@@ -30,12 +30,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function addPhoto(img, randomNumber) {
+  
   const galleryContainer = document.createElement("div");
-  galleryContainer.classList.add(
-    "gallery-container",
-    `w-${randomNumber}`,
-    `h-${randomNumber}`
-  );
+  galleryContainer.classList.add("gallery-container");
+
 
   const galleryItem = document.createElement("div");
   galleryItem.classList.add("gallery-item");
@@ -53,9 +51,6 @@ function addPhoto(img, randomNumber) {
   textDiv.classList.add("text");
   textDiv.textContent = img.photographer;
   galleryItem.appendChild(textDiv);
-
-  // Correção: galleryContainer em vez de container
-  document.getElementById("gallery").appendChild(galleryContainer);
 
   return galleryContainer;
 }
