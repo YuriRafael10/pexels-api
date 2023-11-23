@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const numImgs = data.photos.length;
       for (let i = 0; i < numImgs; i++) {
         const img = document.createElement("img");
-        img.src = data.photos[i].src.large;
+        img.src = data.photos[i].src.large2x;
         img.photographer = data.photos[i].photographer;
         const randomNumber = Math.floor(Math.random() * 6) + 1;
         const photoContainer = addPhoto(img, randomNumber);

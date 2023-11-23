@@ -4,9 +4,24 @@
   box-sizing: border-box;
 }
 footer {
+  position: relative;
+  font-size: 14px;
+  color: white;
   margin-top: 10px;
-  color: rgb(255, 255, 255);
   background-color: rgb(19, 18, 22);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 10%;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+}
+.linking{
+  font-weight: 500;
+  text-decoration: none;
+  text-align: right;
 }
 #titulo {
   font-size: auto;
